@@ -1,0 +1,73 @@
+.navbar {
+    position: fixed;
+    background-color: transparent;
+    justify-content: space-between;
+}
+
+.tab {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30vw;
+}
+
+.tab-menu {
+    position: relative;
+    font-family: 'Poppins';
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--delftblue);
+}
+
+.tab-menu::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: var(--vistablue);
+    transition: width 0.3s ease;
+}
+
+.tab-menu:hover {
+    color: var(--vistablue);
+}
+
+.tab-menu:hover::after {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 100px;
+    width: 90vw;
+    justify-content: space-between;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.signin-button {
+    cursor: pointer;
+    background-color: var(--vistablue);
+    color: white;
+    font-family: 'Poppins';
+    font-weight: bold;
+    border: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.signin-button:hover {
+    background-color: var(--lightpurple);
+    color: var(--delftblue);
+}

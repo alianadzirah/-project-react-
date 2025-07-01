@@ -1,0 +1,142 @@
+.header {
+    visibility: visible;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: row;
+}
+
+.first-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 50px;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-family: 'Poppins';
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    max-height: 4.5em;
+    line-height: 1.5em;
+}
+
+.signin-button-land {
+    align-self: center;
+    background-color: var(--vistablue);
+    font-family: 'Poppins';
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    visibility: hidden;
+}
+
+.signin-button-land:hover {
+    background-color: var(--lightpurple);
+    color: var(--delftblue);
+}
+
+.signup-button {
+    background-color: var(--vistablue);
+    font-family: 'Poppins';
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.signup-button:hover {
+    background-color: var(--lightpurple);
+    color: var(--delftblue);
+}
+
+.image-h {
+    visibility: visible;
+    height: 50vh;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+@media (max-width: 640px) {
+    .header {
+        visibility: hidden;
+    }
+
+    .main-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .first-container {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+    }
+
+
+    .title {
+        font-size: 30px;
+        font-family: 'Poppins';
+    }
+
+    .subtitle {
+        font-size: 10px;
+        font-family: 'Poppins';
+    }
+
+    .signup-button {
+        align-self: center;
+        background-color: var(--vistablue);
+        font-family: 'Poppins';
+        font-size: 15px;
+        border: none;
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+        width: 200px;
+        height: 50px;
+        border-radius: 30px;
+        margin-bottom: 10px;
+    }
+
+    .signin-button-land {
+        visibility: visible;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-h {
+        height: 30vh;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .signin-image {
+        height: 200px;
+    }
+}

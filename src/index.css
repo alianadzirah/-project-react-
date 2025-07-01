@@ -1,6 +1,18 @@
+:root {
+  --honeydew: #ebf5df;
+  --celadon: #bad4aa;
+  --vanilla: #d4d4aa;
+  --yellowish: #edb458;
+  --gray: #bbb;
+  --lighterpurple: #f1f2ff;
+  --lightpurple: hsl(234, 47%, 83%);
+  --vistablue: #8f95d3;
+  --delftblue: #40376e;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Poppins', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
