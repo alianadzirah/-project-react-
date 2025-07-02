@@ -65,18 +65,18 @@ const Signup: React.FC = () => {
                 {showPassword ? <EyeOff size={23} /> : <Eye size={23} />}
               </div>
             </div>
-
+            <span className="label">
+              <input
+                className="custom-checkbox"
+                type="checkbox"
+                checked={isChecked}
+                onChange={(e) => setIsChecked(e.target.checked)}
+              />
+              I agree to the Platform's Terms of Services and Privacy Policies
+            </span>
             <button type="submit" disabled={!isChecked}>Create account</button>
           </form>
-          <span className="label">
-            <input
-              className="custom-checkbox"
-              type="checkbox"
-              checked={isChecked}
-              onChange={(e) => setIsChecked(e.target.checked)}
-            />
-            I agree to the Platform's Terms of Services and Privacy Policies
-          </span>
+
           <span className="footer-label">or sign up with</span>
           <div className="other-button-container">
             <button type="button" onClick={() => goTo('https://google.com')}>

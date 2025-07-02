@@ -1,7 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Landing.css";
-import Navbar from "../components/Navbar";
 import logo from '../assets/controller.png'
 
 const About: React.FC = () => {
