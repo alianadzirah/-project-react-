@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Eye, EyeOff } from 'lucide-react';
 import "./Signing.css";
 import logo from '../assets/icon.png'
-import google from '../assets/google.png'
-import facebook from '../assets/facebook.png'
+import user from '../assets/icon/user.png'
+import lock from '../assets/icon/padlock.png'
+import google from '../assets/icon/google.png'
+import facebook from '../assets/icon/facebook.png'
 
 const Signin: React.FC = () => {
   const navigate = useNavigate();
+  const [showPassword, setShowPassword] = useState<boolean>(false);
 
   const getSignin = (e: React.FormEvent) => {
     e.preventDefault();
@@ -52,9 +56,19 @@ const Signin: React.FC = () => {
           </div>
           <span style={{ fontFamily: 'Poppins', marginTop: '80px', marginBottom: '10px' }}>or continue with username</span>
           <form onSubmit={getSignin}>
-            <img src={logo} width={'20px'} alt="Logo" />
-            <input type="text" placeholder="username" required />
-            <input type="password" placeholder="password" required />
+            <div className="signin">
+              <img src={user} width={'20px'} alt="Logo" />
+              <input type="text" placeholder="username" required />
+            </div>
+            <div className="signin">
+              <img src={lock} width={'20px'} alt="Logo" />
+              <input type={showPassword ? 'text' : 'password'} placeholder="password" required />
+              <div
+                onClick={() => setShowPassword(prev => !prev)}
+              >
+                {showPassword ? <EyeOff size={23} /> : <Eye size={23} />}
+              </div>
+            </div>
             <span className="links" style={{ width: '95%', textAlign: 'right' }} onClick={getLand}>Forgot password?</span>
             <button type="submit">Sign In</button>
           </form>

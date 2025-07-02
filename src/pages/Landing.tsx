@@ -31,7 +31,7 @@ const Landing: React.FC = () => {
                     <div className="second-container">
                         <span className="subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</span>
                     </div>
-                    <button className="signup-button" onClick={getSignup}>Get Started</button>
+                    <button className="signup-button" onClick={getSignup}>Get Started &rarr;</button>
                     <button className="signin-button-land" onClick={getSignin}>Sign In</button>
                 </div>
                 <img src={logo} className="image-h" alt="Logo" />

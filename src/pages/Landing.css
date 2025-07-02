@@ -56,6 +56,9 @@
 }
 
 .signup-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--vistablue);
     font-family: 'Poppins';
     font-size: 15px;
