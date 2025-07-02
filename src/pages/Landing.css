@@ -16,6 +16,11 @@
     flex-direction: column;
 }
 
+.second-container {
+    width: 40vw;
+    margin-bottom: 20px;
+}
+
 .title {
     font-size: 50px;
     font-family: 'Poppins';
@@ -45,7 +50,6 @@
     border-radius: 30px;
     visibility: hidden;
 }
-
 .signin-button-land:hover {
     background-color: var(--lightpurple);
     color: var(--delftblue);
@@ -64,7 +68,6 @@
     border-radius: 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 .signup-button:hover {
     background-color: var(--lightpurple);
     color: var(--delftblue);
@@ -72,8 +75,7 @@
 
 .image-h {
     visibility: visible;
-    height: 50vh;
-    border-radius: 12px;
+    width: 50vh;
     object-fit: cover;
 }
 
@@ -93,7 +95,6 @@
         justify-content: center;
         height: 100vh;
     }
-
 
     .title {
         font-size: 30px;
@@ -126,17 +127,18 @@
 }
 
 @media (max-width: 768px) {
+    .second-container {
+        width: 40vw;
+        margin-bottom: 40px;
+    }
+    
     .image-h {
-        height: 30vh;
+        width: 30vh;
     }
 }
 
 @media (max-width: 1024px) {
     .main-container {
         flex-direction: column;
-    }
-
-    .signin-image {
-        height: 200px;
     }
 }

@@ -30,7 +30,7 @@ const Signin: React.FC = () => {
   return (
     <div className="signin-container">
       <div className="signin-image">
-        <img onClick={getLand} src={logo} style={{cursor: 'pointer'}}  alt="Logo" width={'50%'} />
+        <img onClick={getLand} src={logo} className="big-icon" alt="Logo" />
       </div>
 
       <div className="signin-form">
@@ -50,7 +50,7 @@ const Signin: React.FC = () => {
               Facebook
             </button>
           </div>
-          <span style={{ fontFamily: 'Poppins', marginTop: '100px', marginBottom: '10px' }}>Or continue with email address</span>
+          <span style={{ fontFamily: 'Poppins', marginTop: '100px', marginBottom: '10px' }}>or continue with email address</span>
           <form onSubmit={getSignin}>
             <input type="text" placeholder="Username" required />
             <input type="password" placeholder="Password" required />

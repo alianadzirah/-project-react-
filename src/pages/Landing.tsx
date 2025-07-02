@@ -28,11 +28,9 @@ const Landing: React.FC = () => {
                     <span className="title">We create</span>
                     <span className="title"><span style={{color: 'var(--vistablue)'}}>solutions</span> for</span>
                     <span className="title">your business</span>
-                    <div style={{ width: '40vw' }}>
+                    <div className="second-container">
                         <span className="subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</span>
                     </div>
-                    <br />
-                    <br />
                     <button className="signup-button" onClick={getSignup}>Get Started</button>
                     <button className="signin-button-land" onClick={getSignin}>Sign In</button>
                 </div>

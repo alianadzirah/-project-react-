@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
     return (
         <div className="navbar">
             <div className="container">
-                <img onClick={getLand} src={logo} style={{cursor: 'pointer'}} width={'150px'} alt="Logo" />
+                <img onClick={getLand} src={logo} className='logo' alt="Logo" />
                 <div className='tab'>
                     <Link className='tab-menu' to="/-project-react-">Home</Link>
                     <Link className='tab-menu' to="/about">About</Link>
