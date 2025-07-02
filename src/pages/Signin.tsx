@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./Signin.css";
+import "./Signing.css";
 import logo from '../assets/icon.png'
 import google from '../assets/google.png'
 import facebook from '../assets/facebook.png'
@@ -50,13 +50,15 @@ const Signin: React.FC = () => {
               Facebook
             </button>
           </div>
-          <span style={{ fontFamily: 'Poppins', marginTop: '100px', marginBottom: '10px' }}>or continue with email address</span>
+          <span style={{ fontFamily: 'Poppins', marginTop: '80px', marginBottom: '10px' }}>or continue with username</span>
           <form onSubmit={getSignin}>
-            <input type="text" placeholder="Username" required />
-            <input type="password" placeholder="Password" required />
-            <span className="links" style={{width: '95%',textAlign: 'right'}} onClick={getLand}>Forgot password?</span>
+            <img src={logo} width={'20px'} alt="Logo" />
+            <input type="text" placeholder="username" required />
+            <input type="password" placeholder="password" required />
+            <span className="links" style={{ width: '95%', textAlign: 'right' }} onClick={getLand}>Forgot password?</span>
             <button type="submit">Sign In</button>
           </form>
+          <br />
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Signup.css";
+import "./Signing.css";
 import logo from '../assets/icon.png'
 import google from '../assets/google.png'
 import facebook from '../assets/facebook.png'
@@ -32,7 +32,7 @@ const Signup: React.FC = () => {
   return (
     <div className="signin-container">
       <div className="signin-image">
-        <img onClick={getLand} src={logo} className="big-icon" alt="Logo"/>
+        <img onClick={getLand} src={logo} className="big-icon" alt="Logo" />
       </div>
 
       <div className="signin-form">
@@ -46,12 +46,13 @@ const Signup: React.FC = () => {
             <input type="text" placeholder="Email address" required />
             <span className="label">Password</span>
             <input type="password" placeholder="Password" required />
-            <span className="label" style={{display: 'flex', alignItems: 'center',}}><input
-              style={{ width: '20px', cursor: 'pointer',  marginRight: '15px'}}
-              type="checkbox"
-              checked={isChecked}
-              onChange={(e) => setIsChecked(e.target.checked)}
-            />I agree to the Platform's Terms of Services and Privacy Policies</span>
+            <span className="label" style={{ display: 'flex', alignItems: 'center', }}>
+              <input
+                className="custom-checkbox"
+                type="checkbox"
+                checked={isChecked}
+                onChange={(e) => setIsChecked(e.target.checked)}
+              />I agree to the <span style={{fontWeight: 'bold', color: 'var(--delftblue)'}}>&nbsp;Platform's Terms of Services&nbsp;</span> and <span style={{fontWeight: 'bold',  color: 'var(--delftblue)'}}>&nbsp;Privacy Policies&nbsp;</span></span>
             <button type="submit" disabled={!isChecked}>Create account</button>
           </form>
 

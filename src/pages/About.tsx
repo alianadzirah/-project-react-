@@ -1,6 +1,6 @@
 import React from "react";
 
-const Dashboard: React.FC = () => {
+const About: React.FC = () => {
   return (
     <div style={{ padding: "40px", textAlign: "center" }}>
       <h1>coming soon...</h1>
@@ -8,4 +8,4 @@ const Dashboard: React.FC = () => {
   );
 };
 
-export default Dashboard;
+export default About;
